@@ -25,5 +25,5 @@ for pt in point:
     plt.plot([0,1],[1-normalized_line,1-normalized_line],'r')
     i+=1
 
-
+plt.show()
 
