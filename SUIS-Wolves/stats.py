@@ -4,6 +4,8 @@ from os.path import isfile, join
 import time
 import io
 
+import pandas as pd
+import matplotlib.pyplot as plt
 
 mypath = 'C:\\Users\\aligh_000\\shsu-stats\\SUIS-Wolves'
 
@@ -21,7 +23,7 @@ def single_game_scoring(passing_file):
 			end_x = float(row[21])
 
 			if assist:
-				if end_x > start_x:
+				if (end_x < start_x) and (end_x - start_x < .5):
 					scoring['upline'] += 1
 				else:
 					scoring['crossfield'] += 1
@@ -266,13 +268,48 @@ def ultianalytics_to_statto(ultianalytics_file):
 					
 	return games
 
+def plot_scoring(passing_file):
+	i = 1 
+
+	df = pd.read_csv(passing_file)
+
+	assists = {}
+	for row in df.iterrows():
+		if int(row[1][9]):
+			assists[row[0]] = [row[1][3], row[1][4], row[1][19], row[1][20], row[1][21], row[1][22]]
+
+	for assist in assists.values():
+		plt.subplot(2, 7, i)
+		plt.plot([assist[2], assist[4]], [assist[3], assist[5]])
+		plt.plot([assist[2]],[assist[3]], 'bo')
+		plt.plot([assist[4]], [assist[5]], 'go')
+		plt.xticks([]);plt.yticks([])
+		plt.xlim(0,1);plt.ylim(0,1)
+
+		## endzones
+		normalized_line = 25. / (25+70+25)  ## normalized between 0 and 1, like the X-Y coordinates
+		plt.plot([0,1],[normalized_line,normalized_line],'r')
+		plt.plot([0,1],[1-normalized_line,1-normalized_line],'r')
+		i+=1
+	plt.show()
+#------------------------------------------------
+# test for plot_scoring
+
+# passing_files = [f for f in onlyfiles if ('Passes' in  f)]
+# plot_scoring(passing_files[0])
+
+
 #------------------------------------------------
 # test scoring for crossfield vs upline scoring
 
 passing_files = [f for f in onlyfiles if ('Passes' in f)]
-scoring_summary = multi_game_scoring(passing_files)
+# scoring_summary = multi_game_scoring(passing_files)
+idx = 1
+scoring_summary = single_game_scoring(passing_files[idx])
+print(passing_files[idx])
 for score_type, amount in scoring_summary.items():
 	print(score_type, ': ', amount)
+plot_scoring(passing_files[idx])
 
 #------------------------------------------------
 # test for passing data
