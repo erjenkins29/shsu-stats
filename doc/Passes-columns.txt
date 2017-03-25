@@ -1,0 +1,23 @@
+Created
+Point
+Possession
+Thrower
+Receiver
+Turnover?
+Thrower error?
+Receiver error?
+Throw to endzone?
+Assist?
+Secondary assist?
+Huck? (> 40m)
+Swing?
+Dump?
+From sideline?
+To sideline?
+Distance (m)
+Forward distance (m)
+Left-to-right distance (m)
+Start X (0 -> 1 = left sideline -> right sideline)
+Start Y (0 -> 1 = back of opponent endzone -> back of own endzone)
+End X (0 -> 1 = left sideline -> right sideline)
+End Y (0 -> 1 = back of opponent endzone -> back of own endzone)
