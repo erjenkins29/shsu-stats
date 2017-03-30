@@ -1,0 +1,9 @@
+Created,Point,Player,In own endzone?,In opponent's endzone?,Stall out?,Callahan?,Location X (0 -> 1 = left sideline -> right sideline),Location Y (0 -> 1 = back of opponent endzone -> back of own endzone)
+2017-03-11 15:00,6,#27 Daniel Zhang,0,0,0,0,0.741611,0.589109
+2017-03-11 15:06,8,Oscar Yao,1,0,0,0,0.38255,0.89604
+2017-03-11 15:11,10,#69 Justin Chen,0,0,0,0,0.778524,0.705446
+2017-03-11 15:12,10,Jamie Chen,1,0,0,0,0.285235,0.881188
+2017-03-11 15:18,11,#27 Daniel Zhang,0,0,0,0,0.530201,0.334158
+2017-03-11 15:20,12,Cecilia Wu,0,0,0,0,0.308725,0.554455
+2017-03-11 15:28,15,Joyce Wang,0,0,0,0,0.718121,0.372525
+2017-03-11 15:29,16,#69 Justin Chen,0,0,0,0,0.59396,0.455446
