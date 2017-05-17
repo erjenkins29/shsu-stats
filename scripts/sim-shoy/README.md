@@ -28,7 +28,7 @@ probabilities of winning a game is based on the seeding in the pools-- These can
 
 ### Conservative
 
-![](https://github.com/erjenkins/shsu-stats/scripts/sim-shoy/SHOY-sim-conservative.png "Conservative")
+![](https://raw.githubusercontent.com/erjenkins29/shsu-stats/master/scripts/sim-shoy/SHOY-sim-conservative.png "Conservative")
 
 ### Realistic
-![](https://github.com/erjenkins/shsu-stats/scripts/sim-shoy/SHOY-sim-realistic.png "Realistic")
+![](https://raw.githubusercontent.com/erjenkins29/shsu-stats/master/scripts/sim-shoy/SHOY-sim-realistic.png "Realistic")
