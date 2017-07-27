@@ -1,0 +1,12 @@
+Created,Point,Player,In own endzone?,In opponent's endzone?,Stall out?,Callahan?,Location X (0 -> 1 = left sideline -> right sideline),Location Y (0 -> 1 = back of opponent endzone -> back of own endzone)
+2017-05-21 12:28,2,#22 Paul Simpson,0,0,0,0,0.604027,0.513614
+2017-05-21 12:36,3,Oscar Yao,1,0,0,0,0.0369128,0.907178
+2017-05-21 12:38,3,#22 Paul Simpson,1,0,0,0,0.100671,0.92698
+2017-05-21 12:40,3,#2 Jamie Chen,1,0,0,0,0.590604,0.923267
+2017-05-21 12:52,4,#41 Billy Ni,0,0,0,0,0.372483,0.664604
+2017-05-21 12:53,4,#41 Billy Ni,0,0,0,0,0.456376,0.568069
+2017-05-21 12:55,4,#1 Joyce Wang,0,0,1,0,0.768456,0.565594
+2017-05-21 13:01,4,#22 Paul Simpson,0,0,0,0,0.543624,0.653465
+2017-05-21 13:06,5,#19 Ben Wang,0,0,0,0,0.637584,0.52599
+2017-05-21 13:07,5,#22 Paul Simpson,0,0,1,0,0.744966,0.45297
+2017-05-21 13:19,6,#2 Jamie Chen,0,0,0,0,0.543624,0.689356
